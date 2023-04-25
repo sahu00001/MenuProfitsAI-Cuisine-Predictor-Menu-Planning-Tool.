@@ -20,7 +20,7 @@ The installation of above packages was done using pip install. Below is the comp
 4. Install the pipenv package by running the command pip install pipenv.
 5. Install all the dependencies listed in the requirements.txt file by running the command pipenv install -r requirements.txt.
 6. To run the  tests for the project, use the command pipenv run python -m pytest.
-7. To run the redactor.py file, use the command pipenv run python project2.py --N 5 --ingredient paprika  --ingredient banana --ingredient "rice krispies" 
+7. To run the project2.py file, use the command pipenv run python project2.py --N 5 --ingredient paprika  --ingredient banana --ingredient "rice krispies" 
  
 ## Functions and its definations
 
@@ -52,8 +52,7 @@ The purpose of this test function is to ensure that fresult() is correctly proce
 Overall, the test_resultf() function is used to ensure that the fresult() function is correctly processing input data and returning a dictionary object with the expected keys and values.
 
 ## Bugs 
-1. The name_redaction() function at some lines just redacting half names like only the first name is blocked and the last name is visible. Most of the places its redacting the whole name
-2. The phone_redaction() redacting all the phone numbers but also if it is finding any 10 numbers continously it is blocking them.
+1.Some of the scores for the closest meals are higher than 1.
 
 ## Steps to run the project
 1. Clone the project directory 
@@ -61,10 +60,7 @@ Overall, the test_resultf() function is used to ensure that the fresult() functi
    pip install pipenv
 3. Navigate to directory that we cloned from git and run the command to install dependencies pipenv install
 4. Then run the below command
-pipenv run python redactor.py --input '*.txt' \
-                    --names --dates --phones --genders --address\
-                    --output 'files/' \
-                    --stats stderr
+pipenv run python project2.py --N 5 --ingredient paprika  --ingredient banana --ingredient "rice krispies" 
 
 5. Then run the below command to test the testcases.
 pipenv run python -m pytest
