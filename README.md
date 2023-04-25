@@ -42,6 +42,7 @@ The function returns a dictionary containing the predicted cuisine, the similari
 
 <img width="543" alt="image" src="https://user-images.githubusercontent.com/120352925/234153715-a218a4f5-2620-4114-8a6f-ca547202b335.png">
 ## Test Files
+
 ## test_load_json_file()
 The purpose of this test function is to ensure that load_json_file() is correctly loading a JSON file and returning a pandas DataFrame object. The test function has two parts. In the first part, it creates a temporary JSON file using pd.DataFrame().to_json(). This file contains a list of two dictionaries, each with two key-value pairs. The function then calls load_json_file() with the file path of the temporary file and assigns the return value to the variable result. In the second part of the function, the test asserts that result is a pandas DataFrame object and that it has the expected shape of (2, 2). Overall, the test_load_json_file() function is used to ensure that the load_json_file() function is correctly loading JSON files and returning a pandas DataFrame object.
 
