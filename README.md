@@ -70,5 +70,4 @@ pipenv run python redactor.py --input '*.txt' \
 pipenv run python -m pytest
  
 ## Video my code executing, using the pipenv run command and pipenv run python -m pytest is below
-https://user-images.githubusercontent.com/120352925/229947906-0e81b338-c7fb-405a-9add-44110cb17311.mp4
 
